@@ -9,7 +9,7 @@ public class StoryLoader {
     private BufferedReader reader;
     public void load(String fileName){
         try {
-            reader = new BufferedReader(new FileReader("stories/"+fileName));
+            reader = new BufferedReader(new FileReader("stories/" +fileName));
         } catch (FileNotFoundException e) {
             System.err.println("Story does not exist!");
         }
